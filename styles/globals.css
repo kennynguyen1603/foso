@@ -5,10 +5,15 @@
 
 @font-face {
   font-family: "MT Dalat Sans";
-  src:
-    url("/fonts/MTDalatSans.woff2") format("woff2"),
-    url("/fonts/MTDalatSans.woff") format("woff"),
-    url("/fonts/MTDalatSans.ttf") format("truetype");
+  src: url("/fonts/MTDalatSans.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MT Dalat Sans Cap";
+  src: url("/fonts/MTDalatSansCap.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -21,6 +26,7 @@
   --font-mono: var(--font-geist-mono);
   --font-playfair: var(--font-playfair);
   --font-dalat: "MT Dalat Sans", serif;
+  --font-dalat-cap: "MT Dalat Sans Cap", serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
