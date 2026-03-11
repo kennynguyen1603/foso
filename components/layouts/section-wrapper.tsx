@@ -11,7 +11,7 @@ export default function SectionWrapper({
   id?: string
 }>) {
   return (
-    <section id={id} className={cn(`px-4 lg:px-20`, className)}>
+    <section id={id} className={cn(`px-4 lg:px-16`, className)}>
       {children}
     </section>
   )
