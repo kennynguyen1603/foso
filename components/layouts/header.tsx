@@ -60,8 +60,8 @@ export default function Header() {
                 className="hover:bg-primary/60 flex cursor-pointer items-center gap-3 transition-all"
                 onClick={openCart}
               >
-                <ShoppingCart className="size-4 font-medium" />
-                <span className="text-sm font-medium tracking-wide text-[#E5E3DC] uppercase">
+                <ShoppingCart className="size-4 font-semibold" />
+                <span className="text-sm font-semibold tracking-wide text-[#E5E3DC] uppercase">
                   Giỏ hàng
                 </span>
                 <span className="text-primary flex size-6 items-center justify-center rounded-full bg-[#EAE8E1] text-sm font-semibold">
@@ -152,16 +152,16 @@ export default function Header() {
             <p className="text-sm font-medium text-white">ENGLISH</p>
             <Button
               variant="primary"
-              className="hover:bg-primary/60 flex cursor-pointer items-center gap-3 transition-all"
+              className="flex cursor-pointer items-center gap-3 bg-[#FCE48C] transition-all hover:bg-[#FCE48C]/60"
               onClick={openCart}
             >
-              <ShoppingCart className="size-4" />
-              <span className="text-sm font-medium tracking-wide text-[#E5E3DC] uppercase">
+              <ShoppingCart className="text-primary size-4 font-semibold" />
+              <span className="text-primary text-sm font-semibold tracking-wide uppercase">
                 Giỏ hàng
               </span>
-              <span className="text-primary flex size-6 items-center justify-center rounded-full bg-[#EAE8E1] text-sm font-semibold">
+              <span className="bg-primary flex size-6 items-center justify-center rounded-full text-sm font-semibold text-white">
                 {loading ? (
-                  <span className="inline-block size-3 animate-pulse rounded-full bg-[#C9A84C]/50" />
+                  <span className="inline-block size-3 animate-pulse rounded-full" />
                 ) : (
                   totalItems
                 )}
